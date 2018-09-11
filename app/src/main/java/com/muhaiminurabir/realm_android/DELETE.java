@@ -54,5 +54,7 @@ public class DELETE extends AppCompatActivity {
         realm.commitTransaction();
         finish();
         Toast.makeText(this, "Deleted Data", Toast.LENGTH_SHORT).show();
+        //for entire database delete
+        realm.delete(Name_List.class);
     }
 }
